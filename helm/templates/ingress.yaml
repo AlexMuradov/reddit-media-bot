@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: sniffingcat-ingress
+  name: mediabot-ingress
   namespace: default
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
@@ -11,10 +11,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - '*.prepare.sh'
-    secretName: wildcard-cert-tls-prod
+    - 'example.com'
+    secretName: my-ssl-cert
   rules:
-  - host: sniffingcat.env.prepare.sh
+  - host: mediabot.example.com
     http:
       paths:
       - path: /
