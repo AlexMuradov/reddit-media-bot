@@ -80,7 +80,7 @@ Ensure the following environment variables are set:
 Logs are written to `reddit_fetcher.log`.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the AGPL-3.0 license.
 
 ---
 
